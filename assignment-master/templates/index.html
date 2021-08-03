@@ -1,0 +1,68 @@
+{% extends "master_template.html" %} {%block title%} UniversityOfBalochistan {%endblock%} {%block body%}
+<form class="form-horizontal" action="/intro" method="post">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Name:</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="name" placeholder="Name" name="name" required>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Group Members:</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="name" placeholder="Group Members" name="groupmembers" required>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Project Title:</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="name" placeholder="Project Tiltle" name="project" required>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Project Description:</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="name" placeholder="Project Description" name="projectdes" required>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Supervisor:</label>
+        <div class="col-sm-10">
+            <input class="form-control" id="name" placeholder="Supervisor name" name="supervisor" required>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Your email" name="email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="sesion">Sesion:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="sesion" placeholder="sesion" name="sesion">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Program Study:</label>
+        <div class="col-sm-10">
+            <select class="form-control" id="program" name="program">
+          <option value="BSCS"> BS (CS) </option>
+          <option value="BSIT"> BS (IT) </option>
+          <option value="MCS"> MCS </option>
+          <option value="Phd"> PHD </option>
+        </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</form>
+{%endblock%}

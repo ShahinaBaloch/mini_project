@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        {%block title%} {%endblock%}
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .label-success {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-info">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{url_for('home')}}">ComputerScienceDepartment</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="{{url_for('index')}}">Register</a></li>
+                <li><a href="{{url_for('inter')}}">Information</a></li>
+                <li><a href="{{url_for('dashboard')}}">Admin Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="container">
+        <!-- <h1 class="label label-success">Computerscience</h1> -->
+        <h1 class="display-4 text-success">Welcome to Computer Sience</h1>
+    </header>
+    <div class="container">
+        {%block body%} {%endblock%}
+    </div>
+
+</body>
+
+</html>

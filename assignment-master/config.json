@@ -1,0 +1,23 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/codingthunder",
+        "prod_uri": "mysql://root:@localhost/codingthunder",
+        "db_url": "https://cms.mlcs.xyz/api/view/program_sessions/all/",
+        "tw_url": "https://twitter.com/codingthunder",
+        "gh_url": "https://gitup.com/codingthunder",
+        "blog_name": "shaheena",
+        "tag_line": "A_Blog_For_Programmers",
+        "gmail-user": "rafaydigi@gmail.com",
+        "gmail-password": "MaazMani890",
+        "about_text": "Hi my name is shaheena and I create programming tutorials and I am a good girl",
+        "no_of_posts": 3,
+        "login_image": "login.svg",
+        "admin_user": "shaheena",
+        "admin_password": "tingtong",
+        "upload_location": "E:\\Web with Flask\\static"
+
+
+
+    }
+}
